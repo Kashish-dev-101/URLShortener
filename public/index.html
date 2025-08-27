@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="card">
+        <h2>Shorten a long link</h2>
+        <p class="subtitle">No credit card required.</p>
+
+        <!-- Input form -->
+        <form id="shortener-form" class="form">
+          <label for="longUrl">Paste your long link here</label>
+          <input
+            type="url"
+            id="longUrl"
+            name="longUrl"
+            placeholder="https://example.com/my-long-url"
+            required
+          />
+          <button id="submit" type="submit">Get your link for free →</button>
+        </form>
+
+        <!-- Result section -->
+        <div id="result" class="result hidden">
+          <p>Your shortened link:</p>
+          <a href="#" id="shortUrl" target="_blank"></a>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
